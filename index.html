@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Sheik Mydheen — Software Engineer, Backend Developer & 3D Designer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Official portfolio of M. Sheik Mydheen — AI & Data Science Student, Backend Developer, Linux Enthusiast, and 3D Artist blending programming with Blender 3D modeling and Autodesk Fusion.">
+  <meta name="keywords"
+    content="M Sheik Mydheen, Sheik Mydheen, Backend Developer, 3D Designer, Blender 3D, Linux Server, Python, J.P. College of Engineering, Tamil Nadu, Portfolio, Ethical Hacking, Autodesk Fusion">
+  <meta name="author" content="M. Sheik Mydheen">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="M. Sheik Mydheen — Software Engineer & 3D Designer">
+  <meta property="og:description"
+    content="I design in 3D and build with code. AI & Data Science Student, Backend Developer, Linux & Networking Enthusiast, and 3D Artist.">
+  <meta property="og:image" content="IMG_20260723_114555.jpg.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- FontAwesome 6.5.1 Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Background Canvas for Dynamic Neon Particle Grid -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Glowing Accents -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Main Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Timeline</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="sheikmydheen resume .pdf" target="_blank" download="M_Sheik_Mydheen_Resume.pdf" class="btn-nav">
+            <i class="fas fa-file-arrow-down"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for Projects &amp; Software Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-name">M. Sheik Mydheen</h1>
+
+          <div class="hero-typing-wrapper">
+            <span class="typing-static">I am a </span>
+            <span class="typing-dynamic" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <h2 class="hero-tagline">
+            "I design in <span class="text-neon-cyan">3D</span> and build with <span
+              class="text-neon-blue">code</span>."
+          </h2>
+
+          <p class="hero-bio">
+            A Bachelor of Design &amp; AI/Data Science student blending programming, graphic design, backend
+            infrastructure, and 3D modeling into one creative engineering practice.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+              <i class="fas fa-cubes"></i> View Projects
+            </a>
+            <a href="sheikmydheen resume .pdf" target="_blank" download="M_Sheik_Mydheen_Resume.pdf"
+              class="btn-secondary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn-secondary btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Hero Tech Chips -->
+          <div class="hero-tech-stack">
+            <span class="tech-chip"><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
+            <span class="tech-chip"><i class="fab fa-linux" style="color: #fcc624;"></i> Ubuntu Linux</span>
+            <span class="tech-chip"><i class="fas fa-cube" style="color: #ea7600;"></i> Blender 3D</span>
+            <span class="tech-chip"><i class="fas fa-drafting-compass" style="color: #06b6d4;"></i> Autodesk
+              Fusion</span>
+            <span class="tech-chip"><i class="fas fa-network-wired" style="color: #00f3ff;"></i> Networking</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-container">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-frame">
+              <img src="IMG_20260723_114555.jpg.jpeg" alt="M. Sheik Mydheen — Software Engineer & 3D Artist Portrait"
+                class="avatar-img">
+            </div>
+          </div>
+
+          <!-- Floating Interactive Glass Badges -->
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon"><i class="fas fa-cube text-neon-cyan"></i></div>
+            <div class="badge-info">
+              <span class="badge-title">3D Render beginner</span>
+              <span class="badge-sub">Blender &amp; Fusion 360</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon"><i class="fas fa-server text-neon-blue"></i></div>
+            <div class="badge-info">
+              <span class="badge-title">Backend &amp; Linux Admin</span>
+              <span class="badge-sub">Cloudflare &amp; Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+        <h2 class="section-title">Blending Software Engineering &amp; <span>3D Visualization</span></h2>
+      </div>
+
+      <div class="about-container">
+        <div class="glass-card about-main-card">
+          <div class="about-quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="about-text">
+            Hey there! I'm a college student passionate about software and technology. I love exploring new ideas,
+            building cool projects, and improving my skills every day — from graphic and web design to 3D modeling in
+            Blender and Fusion. With a solid academic background and a curious mindset, I'm always ready to learn, grow,
+            and take on new challenges, whether that means writing code, designing an interface, or rendering a 3D scene
+            from scratch. Let's connect and create something amazing.
+          </p>
+
+          <div class="about-highlights-grid">
+            <div class="about-fact-item">
+              <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <div class="fact-label">Academic Path</div>
+                <div class="fact-value">B.Tech AI &amp; DS / B.Des (2024–2028)</div>
+              </div>
+            </div>
+
+            <div class="about-fact-item">
+              <div class="fact-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <div class="fact-label">Institution</div>
+                <div class="fact-value">J.P. College of Engineering</div>
+              </div>
+            </div>
+
+            <div class="about-fact-item">
+              <div class="fact-icon"><i class="fas fa-code-branch"></i></div>
+              <div>
+                <div class="fact-label">Specializations</div>
+                <div class="fact-value">Backend, Linux, 3D Renders</div>
+              </div>
+            </div>
+
+            <div class="about-fact-item">
+              <div class="fact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="fact-label">Location</div>
+                <div class="fact-value">Keela Veeranam, Tamil Nadu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-laptop-code"></i> Technical Stack</span>
+        <h2 class="section-title">Grouped <span>Skills &amp; Capabilities</span></h2>
+        <p class="section-desc">A comprehensive breakdown of design tools, programming languages, server infrastructure,
+          and languages.</p>
+      </div>
+
+      <!-- Skill Progress Bars Showcase -->
+      <div class="skills-progress-wrapper glass-card">
+        <h3 class="progress-section-heading"><i class="fas fa-chart-line"></i> Core Proficiency Meters</h3>
+        <div class="progress-grid">
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name"><i class="fab fa-python"></i> Python Programming</span>
+              <span class="progress-percent">70%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name"><i class="fas fa-cube"></i> Blender 3D Modeling &amp; Rendering</span>
+              <span class="progress-percent">50%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name"><i class="fab fa-linux"></i> Linux &amp; Server Administration</span>
+              <span class="progress-percent">50%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 50%;"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name"><i class="fas fa-network-wired"></i> Computer Networking (IP, SSH,
+                Tunnels)</span>
+              <span class="progress-percent">75%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+
+
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-name"><i class="fab fa-html5"></i> Web Design (HTML, CSS, JS)</span>
+              <span class="progress-percent">65%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grouped Skill Category Cards -->
+      <div class="grouped-skills-grid">
+        <!-- Design -->
+        <div class="glass-card skill-group-card">
+          <div class="group-header">
+            <div class="group-icon group-icon-cyan"><i class="fas fa-palette"></i></div>
+            <h3>Design &amp; 3D</h3>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fas fa-check-circle text-neon-cyan"></i> Web Design &amp; Layout</li>
+            <li><i class="fas fa-check-circle text-neon-cyan"></i> Graphic Design</li>
+            <li><i class="fas fa-check-circle text-neon-cyan"></i> 3D Modeling &amp; Rendering (Blender)</li>
+            <li><i class="fas fa-check-circle text-neon-cyan"></i> Autodesk Fusion 3D Modeling</li>
+            <li><i class="fas fa-check-circle text-neon-cyan"></i> Materials, Lighting &amp; Cycles Engine</li>
+          </ul>
+        </div>
+
+        <!-- Programming -->
+        <div class="glass-card skill-group-card">
+          <div class="group-header">
+            <div class="group-icon group-icon-blue"><i class="fas fa-code"></i></div>
+            <h3>Programming &amp; Databases</h3>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fas fa-check-circle text-neon-blue"></i> Python Programming</li>
+            <li><i class="fas fa-check-circle text-neon-blue"></i> Java (Basic Fundamentals)</li>
+            <li><i class="fas fa-check-circle text-neon-blue"></i> HTML5 &amp; CSS3</li>
+            <li><i class="fas fa-check-circle text-neon-blue"></i> JavaScript (Basic DOM &amp; Logic)</li>
+            <li><i class="fas fa-check-circle text-neon-blue"></i> MySQL Relational Databases</li>
+          </ul>
+        </div>
+
+        <!-- Infrastructure & Networking -->
+        <div class="glass-card skill-group-card">
+          <div class="group-header">
+            <div class="group-icon group-icon-purple"><i class="fas fa-server"></i></div>
+            <h3>Linux &amp; Systems</h3>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fas fa-check-circle text-neon-purple"></i> Linux (Ubuntu Server Administration)</li>
+            <li><i class="fas fa-check-circle text-neon-purple"></i> Networking (IP Addressing, Subnetting)</li>
+            <li><i class="fas fa-check-circle text-neon-purple"></i> Remote Access (SSH, Ping, Tools)</li>
+            <li><i class="fas fa-check-circle text-neon-purple"></i> Cloudflare Tunneling &amp; Self-Hosting</li>
+            <li><i class="fas fa-check-circle text-neon-purple"></i> Git Version Control &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <!-- Other & Languages -->
+        <div class="glass-card skill-group-card">
+          <div class="group-header">
+            <div class="group-icon group-icon-green"><i class="fas fa-globe"></i></div>
+            <h3>Other &amp; Languages</h3>
+          </div>
+          <ul class="skill-list">
+            <li><i class="fas fa-check-circle text-neon-green"></i> Video &amp; Image Editing</li>
+            <li><i class="fas fa-check-circle text-neon-green"></i> Problem Solving &amp; Logic</li>
+            <li><i class="fas fa-check-circle text-neon-green"></i> Ethical Hacking &amp; Digital Defense</li>
+            <li><i class="fas fa-check-circle text-neon-green"></i> English</li>
+            <li><i class="fas fa-check-circle text-neon-green"></i> Tamil (Native / Fluent)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+        <h2 class="section-title">Projects — <span>3D Renders &amp; Systems</span></h2>
+        <p class="section-desc">Explore rendered 3D scenes, hard surface models, self-hosted Linux server setups, and
+          network labs.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="3d">3D Renders &amp; Gallery</button>
+        <button class="filter-btn" data-filter="server">Linux &amp; Networking</button>
+        <button class="filter-btn" data-filter="python">Python &amp; Code</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1: Minimalist Wooden Table (3D Render) -->
+        <div class="glass-card project-card" data-category="3d">
+          <div class="project-img-wrapper"
+            onclick="openLightbox('1.png', 'Minimalist Wooden Table (3D Render)', 'Low-poly wooden coffee table rendered with Cycles in Blender. Studio lighting, reflective shadow, and procedural wood textures.')">
+            <img src="1.png" alt="3D rendered wooden coffee table with soft studio lighting" class="project-img"
+              loading="lazy">
+            <div class="img-overlay-badge"><i class="fas fa-expand-alt"></i> Click to Zoom Lightbox</div>
+            <span class="project-type-tag tag-3d"><i class="fas fa-cube"></i> 3D Render</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Minimalist Wooden Table (3D Render)</h3>
+            <p class="value-prop">A low-poly wooden coffee table modeled and rendered to study lighting, shadow, and
+              material realism.</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> Modeled in Blender 3.x</li>
+              <li><i class="fas fa-circle-dot"></i> Focus on soft studio lighting and reflective floor shadow</li>
+              <li><i class="fas fa-circle-dot"></i> Practice piece for object-level 3D modeling</li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-cyan"></i> <strong>Tools:</strong> Blender 3.x · Cycles Engine · Material
+              Nodes
+            </div>
+
+            <div class="project-links">
+              <button class="btn-project-link"
+                onclick="openLightbox('1.png', 'Minimalist Wooden Table (3D Render)', 'Low-poly wooden coffee table rendered with Cycles in Blender. Studio lighting, reflective shadow, and procedural wood textures.')">
+                <i class="fas fa-search-plus"></i> Lightbox
+              </button>
+              <a href="https://artstation.com" target="_blank" class="btn-project-link placeholder-link"
+                title="User to add live ArtStation / Behance link">
+                <i class="fab fa-artstation"></i> ArtStation <span class="input-badge">Needs Link</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Stylized Refreshment Stall (3D Render) -->
+        <div class="glass-card project-card" data-category="3d">
+          <div class="project-img-wrapper"
+            onclick="openLightbox('2.png', 'Stylized Refreshment Stall (3D Render)', 'Detailed 3D kiosk counter composition with glass props, striped awning, wooden benches, and backdrop environment lighting.')">
+            <img src="2.png" alt="Stylized 3D refreshment stall kiosk scene" class="project-img" loading="lazy">
+            <div class="img-overlay-badge"><i class="fas fa-expand-alt"></i> Click to Zoom Lightbox</div>
+            <span class="project-type-tag tag-3d"><i class="fas fa-cube"></i> 3D Render</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Stylized Refreshment Stall (3D Render)</h3>
+            <p class="value-prop">A stylized kiosk/counter scene combining architectural modeling with prop design
+              (glass, awning, benches, plants).</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> Full scene composition with multiple props</li>
+              <li><i class="fas fa-circle-dot"></i> Color-blocked material design (mustard, blue, terracotta)</li>
+              <li><i class="fas fa-circle-dot"></i> Environment lighting against a colored backdrop</li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-cyan"></i> <strong>Tools:</strong> Blender 3.x · EEVEE / Cycles ·
+              Lighting Setup
+            </div>
+
+            <div class="project-links">
+              <button class="btn-project-link"
+                onclick="openLightbox('2.png', 'Stylized Refreshment Stall (3D Render)', 'Detailed 3D kiosk counter composition with glass props, striped awning, wooden benches, and backdrop environment lighting.')">
+                <i class="fas fa-search-plus"></i> Lightbox
+              </button>
+              <a href="https://behance.net" target="_blank" class="btn-project-link placeholder-link"
+                title="User to add live Behance link">
+                <i class="fab fa-behance"></i> Behance <span class="input-badge">Needs Link</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Classroom Interior (3D Render) -->
+        <div class="glass-card project-card" data-category="3d">
+          <div class="project-img-wrapper"
+            onclick="openLightbox('class room.png', 'Classroom Interior (3D Render)', 'Full classroom interior render exploring repeated furniture layout, symmetry, desk instancing, chalkboard detailing, and architectural lighting.')">
+            <img src="class room.png" alt="Full 3D classroom interior render" class="project-img" loading="lazy">
+            <div class="img-overlay-badge"><i class="fas fa-expand-alt"></i> Click to Zoom Lightbox</div>
+            <span class="project-type-tag tag-3d"><i class="fas fa-cube"></i> 3D Render</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Classroom Interior (3D Render)</h3>
+            <p class="value-prop">A full classroom interior render exploring repeated furniture layout, symmetry, and
+              interior lighting.</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> Modeled rows of desks/benches with instancing</li>
+              <li><i class="fas fa-circle-dot"></i> Chalkboard and notice board detailing</li>
+              <li><i class="fas fa-circle-dot"></i> Practiced camera framing for architectural interior shots</li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-cyan"></i> <strong>Tools:</strong> Blender 3.x (class room.blend) ·
+              Cycles Engine
+            </div>
+
+            <div class="project-links">
+              <button class="btn-project-link"
+                onclick="openLightbox('class room.png', 'Classroom Interior (3D Render)', 'Full classroom interior render exploring repeated furniture layout, symmetry, desk instancing, chalkboard detailing, and architectural lighting.')">
+                <i class="fas fa-search-plus"></i> Lightbox
+              </button>
+              <a href="https://artstation.com" target="_blank" class="btn-project-link placeholder-link"
+                title="User to add live ArtStation link">
+                <i class="fab fa-artstation"></i> ArtStation <span class="input-badge">Needs Link</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Home Linux Server -->
+        <div class="glass-card project-card" data-category="server">
+          <div class="project-img-wrapper"
+            onclick="openLightbox('server_render.png', 'Home Linux Server Infrastructure', '3D visual representation of self-hosted Ubuntu Server rack infrastructure with Cloudflare Tunnels and remote SSH access.')">
+            <img src="server_render.png" alt="3D representation of Home Linux Server infrastructure" class="project-img"
+              loading="lazy">
+            <div class="img-overlay-badge"><i class="fas fa-expand-alt"></i> Click to View Diagram</div>
+            <span class="project-type-tag tag-server"><i class="fas fa-server"></i> Server / Network</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Home Linux Server Setup</h3>
+            <p class="value-prop">Ubuntu Server self-hosted infrastructure configured with Cloudflare Tunnel, remote
+              access, and zero-trust security.</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> Headless Ubuntu Server OS installation &amp; security hardening</li>
+              <li><i class="fas fa-circle-dot"></i> Cloudflare Tunnel setup for public domain access without port
+                forwarding</li>
+              <li><i class="fas fa-circle-dot"></i> Remote SSH management, key-based authentication, systemd services
+              </li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-blue"></i> <strong>Stack:</strong> Ubuntu Server · Cloudflare Tunnels ·
+              SSH · Systemd
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/mydheensheik575-spe" target="_blank" class="btn-project-link">
+                <i class="fab fa-github"></i> GitHub Docs
+              </a>
+              <button class="btn-project-link"
+                onclick="openLightbox('server_render.png', 'Home Linux Server Infrastructure', '3D visual representation of self-hosted Ubuntu Server rack infrastructure with Cloudflare Tunnels and remote SSH access.')">
+                <i class="fas fa-network-wired"></i> Topology Diagram
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Networking Lab & Diagnostics -->
+        <div class="glass-card project-card" data-category="server">
+          <div class="project-card-icon-banner banner-network">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-type-tag tag-server"><i class="fas fa-server"></i> Networking Lab</span>
+            <h3 class="project-title">Networking Lab &amp; Diagnostic Tools</h3>
+            <p class="value-prop">Network topology simulation focusing on IP addressing, Ping diagnostics, SSH
+              automation, and routing setup.</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> IPv4 addressing scheme design, CIDR subnetting, &amp; routing tables
+              </li>
+              <li><i class="fas fa-circle-dot"></i> Network latency analysis using ICMP Ping and Traceroute</li>
+              <li><i class="fas fa-circle-dot"></i> Secure remote command execution &amp; Linux network interface
+                configs</li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-blue"></i> <strong>Tools:</strong> Linux CLI · Wireshark · Packet Tracer
+              · SSH
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/mydheensheik575-spe" target="_blank" class="btn-project-link">
+                <i class="fab fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Python Programs & Algorithms -->
+        <div class="glass-card project-card" data-category="python">
+          <div class="project-card-icon-banner banner-python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-type-tag tag-python"><i class="fab fa-python"></i> Python Code</span>
+            <h3 class="project-title">Python Applications &amp; Automation</h3>
+            <p class="value-prop">Console applications, automated file handling systems, and HackerRank problem solving
+              implementations.</p>
+
+            <ul class="project-highlights">
+              <li><i class="fas fa-circle-dot"></i> Interactive CLI applications with robust error handling</li>
+              <li><i class="fas fa-circle-dot"></i> Automated directory indexing and file manipulation scripts</li>
+              <li><i class="fas fa-circle-dot"></i> Data structures and algorithmic problem solving</li>
+            </ul>
+
+            <div class="project-tools-note">
+              <i class="fas fa-tools text-neon-green"></i> <strong>Tools:</strong> Python 3.11 · File I/O · Algorithmic
+              Logic
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/mydheensheik575-spe" target="_blank" class="btn-project-link">
+                <i class="fab fa-github"></i> GitHub Scripts
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPERIENCE TIMELINE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-route"></i> Growth Path</span>
+        <h2 class="section-title">Experience &amp; <span>Learning Journey</span></h2>
+        <p class="section-desc">My progression from AI &amp; DS student to backend developer and 3D artist.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Item 1 -->
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot"><i class="fas fa-shield-halved"></i></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> June – July 2026</span>
+            <h3 class="timeline-role">Cyber Sentinel Intern &amp; 3D Designer</h3>
+            <div class="timeline-org"><i class="fas fa-building"></i> Inspire Softech Solutions &amp; Autodesk</div>
+            <p class="timeline-desc">
+              Completed a 2-week intensive internship in Ethical Hacking &amp; Digital Defense Essentials while
+              mastering Autodesk Fusion 3D Modeling (12-hour certification) and advanced Blender Cycles studio
+              rendering.
+            </p>
+            <div class="timeline-tags">
+              <span>Ethical Hacking</span>
+              <span>Fusion 360</span>
+              <span>Blender Cycles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item timeline-right">
+          <div class="timeline-dot"><i class="fas fa-server"></i></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Late 2025 – Early 2026</span>
+            <h3 class="timeline-role">Backend &amp; Linux Server Enthusiast</h3>
+            <div class="timeline-org"><i class="fas fa-terminal"></i> Self-Directed &amp; HackerRank Verified</div>
+            <p class="timeline-desc">
+              Built a self-hosted Ubuntu Linux home server with Cloudflare Tunnels, configured SSH keys and networking
+              labs, earned HackerRank Python (Basic) and Problem Solving badges, and completed Microsoft Digital Skills
+              training.
+            </p>
+            <div class="timeline-tags">
+              <span>Ubuntu Server</span>
+              <span>Python</span>
+              <span>Cloudflare</span>
+              <span>Networking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2024 – Present</span>
+            <h3 class="timeline-role">B.Tech AI &amp; DS Student</h3>
+            <div class="timeline-org"><i class="fas fa-university"></i> J.P. College of Engineering</div>
+            <p class="timeline-desc">
+              Commenced engineering studies in Artificial Intelligence &amp; Data Science (2024–2028). Blending core
+              computer science logic with graphic design and 3D modeling fundamentals. Earned Naan Mudhalvan
+              Employability Skills certification.
+            </p>
+            <div class="timeline-tags">
+              <span>AI &amp; Data Science</span>
+              <span>Bachelor of Design</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CERTIFICATIONS SECTION -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-award"></i> Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span>Internships</span></h2>
+        <p class="section-desc">Verified achievements in ethical hacking, 3D modeling, digital skills, problem solving,
+          and Python.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- Cert 1 -->
+        <a href="Cyber Sentinel Ethical Hacking &amp; Digital Defense Essentials.pdf" target="_blank"
+          class="glass-card cert-card cert-card-clickable" title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-inspire"><i class="fas fa-user-shield"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Cyber Sentinel: Ethical Hacking &amp; Digital Defense Essentials</h3>
+              <div class="cert-issuer"><i class="fas fa-building"></i> Inspire Softech Solutions</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> Two-week internship (24 Jun – 7 Jul
+              2026)</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert 2 -->
+        <a href="Introduction to 3D Modeling using Fusion.pdf" target="_blank"
+          class="glass-card cert-card cert-card-clickable" title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-autodesk"><i class="fas fa-cube"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Introduction to 3D Modeling using Fusion</h3>
+              <div class="cert-issuer"><i class="fas fa-award"></i> Autodesk</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> 12 Hours Coursework (Issued 9 Jul 2026)</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert 3 -->
+        <a href="Foundation Skills for Employability.pdf" target="_blank"
+          class="glass-card cert-card cert-card-clickable" title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-scopik"><i class="fas fa-graduation-cap"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Foundation Skills for Employability</h3>
+              <div class="cert-issuer"><i class="fas fa-landmark"></i> Naan Mudhalvan Scheme, Govt. of Tamil Nadu
+                (Scopik)</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> Issued 8 Jul 2026</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert 4 -->
+        <a href="Digital Skills.pdf" target="_blank" class="glass-card cert-card cert-card-clickable"
+          title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-microsoft"><i class="fab fa-microsoft"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Digital Skills</h3>
+              <div class="cert-issuer"><i class="fas fa-landmark"></i> Naan Mudhalvan Scheme, Govt. of Tamil Nadu
+                (Microsoft)</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> Issued 20 Nov 2025</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert 5 -->
+        <a href="Problem Solving (Basic).pdf" target="_blank" class="glass-card cert-card cert-card-clickable"
+          title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-hackerrank"><i class="fas fa-code"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Problem Solving (Basic)</h3>
+              <div class="cert-issuer"><i class="fab fa-hackerrank"></i> HackerRank Verified</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> Earned 14 Feb 2026</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert 6 -->
+        <a href="Python (Basic).pdf" target="_blank" class="glass-card cert-card cert-card-clickable"
+          title="Click to open official certificate PDF">
+          <div class="cert-header">
+            <div class="cert-badge-icon badge-hackerrank"><i class="fab fa-python"></i></div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Python (Basic)</h3>
+              <div class="cert-issuer"><i class="fab fa-hackerrank"></i> HackerRank Verified</div>
+            </div>
+          </div>
+          <div class="cert-footer-row">
+            <span class="cert-date"><i class="far fa-calendar-check"></i> Earned 4 Mar 2026</span>
+            <span class="cert-pdf-badge"><i class="fas fa-file-pdf"></i> View PDF</span>
+          </div>
+        </a>
+
+        <!-- Cert Placeholder Box for easy future additions -->
+        <div class="glass-card cert-card cert-add-placeholder">
+          <div class="cert-header" style="justify-content: center; text-align: center; flex-direction: column;">
+            <div class="cert-badge-icon badge-add"><i class="fas fa-plus"></i></div>
+            <h3 class="cert-title" style="color: var(--text-muted);">Add New Certificate</h3>
+            <span style="font-size: 0.85rem; color: var(--text-subtle); margin-top: 0.25rem;">Template slot ready for
+              upcoming credentials</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. EDUCATION SECTION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-university"></i> Education</span>
+        <h2 class="section-title">Academic <span>Foundation</span></h2>
+      </div>
+
+      <div class="education-wrapper">
+        <div class="glass-card education-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <div class="edu-timeline"><i class="far fa-calendar-alt"></i> 2024 – 2028 (In Progress)</div>
+            <h3 class="edu-degree">B.Tech — Artificial Intelligence &amp; Data Science</h3>
+            <div class="edu-sub">Bachelor of Design &amp; Software Engineering Focus</div>
+            <div class="edu-institution"><i class="fas fa-school"></i> J.P. College of Engineering</div>
+            <p class="edu-desc">
+              Coursework spans AI concepts, data structures, backend database management, Linux systems, and 3D modeling
+              in Autodesk Fusion and Blender.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's <span>Connect &amp; Collaborate</span></h2>
+        <p class="section-desc">Have a software project, Linux server task, or 3D rendering assignment? Reach out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Details Card -->
+        <div class="glass-card contact-info-card">
+          <h3 class="contact-card-title">Contact Information</h3>
+          <p class="contact-card-sub">Feel free to contact me via email, phone, or direct social channels.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:+919786714956" class="contact-val">9786714956</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:mydheensheik575@gmail.com" class="contact-val">mydheensheik575@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val">Keela Veeranam, Tamil Nadu, India</div>
+            </div>
+          </div>
+
+          <div class="social-block">
+            <div class="social-heading">Social &amp; Developer Profiles</div>
+            <div class="social-links">
+              <a href="https://github.com/mydheensheik575-spe" target="_blank" class="social-btn"
+                aria-label="GitHub Profile" title="M. Sheik Mydheen GitHub Profile">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sheik-mydheen-9b5b03268/" target="_blank" class="social-btn"
+                aria-label="LinkedIn Profile" title="M. Sheik Mydheen LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="glass-card contact-form-card">
+          <h3 class="contact-card-title">Send a Message</h3>
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. 3D Render & Backend Inquiry"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Write your message details here..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/mydheensheik575-spe" target="_blank" class="social-btn" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sheik-mydheen-9b5b03268/" target="_blank" class="social-btn"
+          aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+      </div>
+      <p class="footer-text">
+        Designed &amp; Developed by <span>M. Sheik Mydheen</span> &copy; 2026. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for 3D Render Gallery -->
+  <div class="lightbox-modal" id="lightbox-modal" tabindex="-1" aria-hidden="true">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-content glass-card">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="3D Render Fullscreen" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-details">
+        <h3 class="lightbox-title" id="lightbox-title"></h3>
+        <p class="lightbox-desc" id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Success Modal -->
+  <div class="form-modal" id="form-modal" tabindex="-1" aria-hidden="true">
+    <div class="form-modal-backdrop" onclick="closeFormModal()"></div>
+    <div class="form-modal-content glass-card">
+      <div class="modal-check-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Message Received!</h3>
+      <p id="form-modal-msg">Thank you for reaching out. Your message has been prepared for dispatch.</p>
+      <button class="btn-primary" onclick="closeFormModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
